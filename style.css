@@ -1,0 +1,228 @@
+:root {
+    --bg-color: #050505;
+    --text-main: #e0e0e0;
+    --neon-purple: #bc13fe;
+    --dark-purple: #4c0070;
+    --card-bg: #0f0a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-purple);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-main);
+}
+.logo span { color: var(--neon-purple); }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--neon-purple);
+    text-shadow: 0 0 8px var(--neon-purple);
+}
+
+/* Typography & Layout Global */
+section {
+    padding: 5rem 10%;
+}
+
+.section-title {
+    color: var(--neon-purple);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    border-bottom: 1px dashed var(--dark-purple);
+    display: inline-block;
+}
+
+/* Hero Section */
+#hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.glow-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple);
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    margin-bottom: 1rem;
+    height: 30px; /* Biar gak loncat pas ngetik */
+}
+
+.cursor {
+    animation: blink 1s infinite;
+    color: var(--neon-purple);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.sub-text {
+    margin-bottom: 3rem;
+    color: #777;
+}
+
+.btn-neon {
+    padding: 1rem 2rem;
+    color: var(--neon-purple);
+    text-decoration: none;
+    border: 1px solid var(--neon-purple);
+    background: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn-neon:hover {
+    background: var(--neon-purple);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--neon-purple);
+}
+
+/* Skills */
+.skills {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    background: var(--dark-purple);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: 1px solid var(--neon-purple);
+}
+
+/* Timeline Experience */
+.timeline {
+    border-left: 2px solid var(--neon-purple);
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.4rem;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: var(--bg-color);
+    border: 2px solid var(--neon-purple);
+    border-radius: 50%;
+}
+
+.timeline-item h4 {
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+/* Grid Cards (Projects & Certs) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border: 1px solid var(--dark-purple);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-purple);
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.2);
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Certificates Specific */
+.cert-card {
+    background: var(--card-bg);
+    border: 1px solid var(--dark-purple);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    border-color: var(--neon-purple);
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);
+}
+
+.cert-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--dark-purple);
+}
+
+.cert-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.cert-info h3 {
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--dark-purple);
+    color: #555;
+}
