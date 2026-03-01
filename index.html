@@ -1,206 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muh Wafa Akmal | AI Engineer & Tech Founder</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: #0a0f1c;
-    color: #e6edf3;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 0;
-}
-
-header {
-    text-align: center;
-    padding: 120px 20px 60px;
-    background: radial-gradient(circle at top right, #1e3a8a20, transparent 40%),
-                radial-gradient(circle at bottom left, #9333ea20, transparent 40%);
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    background: linear-gradient(90deg, #60a5fa, #a78bfa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-header p {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    color: #94a3b8;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 28px;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #3b82f6, #9333ea);
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    opacity: 0.85;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    border-left: 4px solid #6366f1;
-    padding-left: 15px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: #111827;
-    padding: 25px;
-    border-radius: 16px;
-    transition: 0.3s;
-    border: 1px solid #1f2937;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    border-color: #6366f1;
-}
-
-.card h3 {
-    margin-bottom: 15px;
-    color: #60a5fa;
-}
-
-.skills span {
-    display: inline-block;
-    background: #1f2937;
-    padding: 8px 14px;
-    margin: 6px;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    color: #cbd5e1;
-}
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: #0f172a;
-    font-size: 0.9rem;
-    color: #64748b;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wafa | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="logo">WAFA_<span>sys</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+        </ul>
+    </nav>
 
-<header>
-    <h1>Muh Wafa Akmal</h1>
-    <p>AI Engineer • Hackathon Builder • Web3 Enthusiast • Tech Founder</p>
-    <a href="#projects" class="btn">Explore My Work</a>
-</header>
-
-<div class="container">
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Informatics student focused on Artificial Intelligence, Decision Support Systems,
-        and Edge-based Computer Vision. Passionate about building scalable digital solutions
-        for social impact and emerging technologies including Web3 and decentralized systems.
-    </p>
-</section>
-
-<section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="grid">
-
-        <div class="card">
-            <h3>AI Bansos Decision System</h3>
-            <p>
-                Smart Decision Support System using SCPK method to determine
-                social aid recipients objectively and transparently.
-            </p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="glow-text">Hi, I'm Wafa.</h1>
+            <h2 class="tagline"><span id="typewriter"></span><span class="cursor">|</span></h2>
+            <p class="sub-text">Mahasiswa Teknik Informatika - UPN "Veteran" Yogyakarta</p>
+            <a href="#projects" class="btn-neon">Initialize_Projects()</a>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Edge Vision Quality Inspection</h3>
-            <p>
-                Real-time inspection system for UMKM food raw materials
-                using edge-based computer vision.
-            </p>
+    <section id="about">
+        <h2 class="section-title">&gt; system.info</h2>
+        <div class="about-container">
+            <p>Gue sangat tertarik dengan dunia komputasi cerdas. Fokus utama gue ada di pengembangan model AI yang efisien, arsitektur sistem yang rapi dengan prinsip OOP, dan optimasi algoritma.</p>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">OOP</span>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>SampahNol</h3>
-            <p>
-                Digital marketplace platform for waste trading ecosystem.
-                Built for Sevenpreneur Business Plan Competition 2025.
-            </p>
+    <section id="experience">
+        <h2 class="section-title">&gt; cd /experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>AI & Machine Learning Intern</h3>
+                <h4>PT VINIX 7 | <i>Sekarang</i></h4>
+                <p>Terlibat langsung dalam riset dan pengembangan solusi berbasis kecerdasan buatan dan machine learning untuk kebutuhan industri.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Peserta Hackathon (The AI Marathon)</h3>
+                <h4>Find IT! 2026 | <i>Feb - Mei 2026</i></h4>
+                <p>Mengembangkan "LokaKarsa Edge", sebuah sistem inspeksi kualitas bahan baku pangan UMKM berbasis Edge Vision (Computer Vision) yang beroperasi secara luring.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Applicant</h3>
+                <h4>Google Student Ambassador | <i>2026</i></h4>
+                <p>Mencalonkan diri sebagai representatif Google di kampus untuk menjembatani teknologi inovatif dengan ekosistem mahasiswa.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>$GROW Token</h3>
-            <p>
-                Web3 token concept with Solidity smart contract and whitepaper
-                for decentralized green economy initiative.
-            </p>
+    <section id="projects">
+        <h2 class="section-title">&gt; ls -l ./projects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>LokaKarsa Edge</h3>
+                <p>Sistem inspeksi kualitas pangan berbasis *Edge Vision* untuk mitigasi *food waste* UMKM. Menggunakan Python untuk training AI dan C++ untuk optimasi inference.</p>
+            </div>
+            <div class="card">
+                <h3>Kalkulator Nutrisi Makanan</h3>
+                <p>Program interaktif untuk menghitung dan menganalisis kandungan gizi pada bahan makanan harian secara presisi.</p>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="certificates">
+        <h2 class="section-title">&gt; cat certificates.log</h2>
+        <p style="text-align: center; color: #a0a0a0; margin-bottom: 2rem;">Bukti validasi *skill* dan pencapaian.</p>
+        <div class="grid-container">
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://via.placeholder.com/400x250/1a0b2e/bc13fe?text=Sertifikat+Magang+VINIX+7" alt="Sertifikat PT VINIX 7">
+                </div>
+                <div class="cert-info">
+                    <h3>Sertifikat AI Intern - PT VINIX 7</h3>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://via.placeholder.com/400x250/1a0b2e/bc13fe?text=Sertifikat+Find+IT+2026" alt="Sertifikat Find IT 2026">
+                </div>
+                <div class="cert-info">
+                    <h3>Finalist - Hackathon Find IT! 2026</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
-    <h2>Tech Stack</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Computer Vision</span>
-        <span>Decision Support System</span>
-        <span>Solidity</span>
-        <span>Web3</span>
-        <span>HTML/CSS</span>
-        <span>JavaScript</span>
-        <span>Git</span>
-    </div>
-</section>
+    <footer>
+        <p>System offline. &copy; 2026 Wafa.</p>
+    </footer>
 
-<section id="vision">
-    <h2>Vision</h2>
-    <p>
-        Building intelligent systems that solve real-world problems with scalable
-        architecture, data-driven decision making, and decentralized innovation.
-        Future focus: AI-native platforms and blockchain-integrated ecosystems.
-    </p>
-</section>
-
-</div>
-
-<footer>
-    © 2026 Muh Wafa Akmal • AI & Tech Innovation
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
